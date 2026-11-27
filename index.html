@@ -141,12 +141,13 @@
     <div id="modeMenu">
         <h1>FORCE</h1>
         <div class="subtitle">ВЫБЕРИТЕ РЕЖИМ ИГРЫ</div>
-        <div class="menuNotice">В связи с техническими ограничениями, Пулеметный Танк выйдет в следующей версии не позднее, чем через месяц. Приносим свои извинения, и благодарим за выбор Force!</div>
+        <div class="menuNotice">Новая машина! Бронетранспортёр (БТР) — пулемётная башня, высокая скорострельность, бесконечная прокачка брони (скорость всегда как при ур.3). Выбирайте ниже.</div>
         <div id="tankTypeSelector">
             <div style="width:100%; text-align:center; color:#aaa; font-size:13px; letter-spacing:2px; margin-bottom:12px;">ВАШ ТАНК:</div>
             <div class="tankTypeRow">
                 <button class="strategyBtn selected" data-tank="normal">Force (стандарт)<span class="small">130 HP · баланс</span></button>
                 <button class="strategyBtn" data-tank="sherman">ШЕРМАН<span class="small">100 HP · быстрый, хрупкий</span></button>
+                <button class="strategyBtn" data-tank="apc">БТР<span class="small">90 HP · пулемёт, ∞ брони</span></button>
             </div>
         </div>
         <div class="modes">
@@ -162,13 +163,13 @@
             </div>
             <div class="modeCard" data-mode="allies">
                 <h2>С СОЮЗНИКАМИ</h2>
-                <p>Карта вчетверо больше — 4000 × 4000, с высокими горами.</p>
-                <p>30 врагов (Тигры), 5 союзников (2 Sherman + 3 тяжёлых).</p>
+                <p>Карта 2667 × 2667, с невысокими горами.</p>
+                <p>30 врагов (Тигры), 4–5 союзников (БТРы).</p>
                 <p>Союзники действуют по выбранной стратегии.</p>
                 <span class="tag">1 игрок</span>
-                <span class="tag">5 союзников</span>
+                <span class="tag">БТР-союзники</span>
                 <span class="tag">30 врагов</span>
-                <span class="tag">высокие горы</span>
+                <span class="tag">невысокие горы</span>
                 <div class="hint">Нажмите, чтобы выбрать стиль союзников</div>
             </div>
         </div>
@@ -200,7 +201,7 @@
                 <h3>СОВЕТЫ</h3>
                 <div class="row"><span class="desc">Прокачка</span><span class="val">Броня (<kbd>E</kbd>) — 2 очка / уровень</span></div>
                 <div class="row"><span class="desc">Ракеты</span><span class="val">Разблокировка (<kbd>Q</kbd>) — 8 очков, +2 ракеты</span></div>
-                <div class="row"><span class="desc">Союзники</span><span class="val">Режим «С союзниками» — 5 ИИ-помощников</span></div>
+                <div class="row"><span class="desc">Союзники</span><span class="val">Режим «С союзниками» — БТР-помощники</span></div>
                 <div class="note">Подробные параметры — кнопка «ВСЕ ПАРАМЕТРЫ» внизу.</div>
             </div>
         </div>
@@ -239,8 +240,8 @@
         <h3>ТИПЫ ТАНКОВ</h3>
         <div class="row"><span class="desc">Обычный</span><span class="val">1 попадание</span></div>
         <div class="row"><span class="desc">Тигр</span><span class="val">2 попадания, медленнее, чаще стреляет</span></div>
-        <div class="row"><span class="desc">Sherman (союзник)</span><span class="val">изящный корпус, длинный ствол</span></div>
-        <div class="row"><span class="desc">Тяжёлый союзник</span><span class="val">броня 3 (220 HP)</span></div>
+        <div class="row"><span class="desc">БТР (союзник)</span><span class="val">пулемёт, колёса, 90 HP</span></div>
+        <div class="row"><span class="desc">Все союзники</span><span class="val">только БТР-ы</span></div>
         <h3>РАЗРУШЕНИЯ</h3>
         <div class="row"><span class="desc">Здание: прочность</span><span class="val">3 попадания</span></div>
         <div class="row"><span class="desc">При разрушении</span><span class="val">взрыв, огонь, пыль, обломки, руина</span></div>
@@ -294,7 +295,7 @@
                 <div class="row"><span class="desc">Базовая броня</span><span class="val">100</span></div>
                 <div class="row"><span class="desc">+ за уровень</span><span class="val">+40 к максимуму</span></div>
                 <div class="row"><span class="desc">Стоимость уровня</span><span class="val">2 очка</span></div>
-                <div class="row"><span class="desc">Макс. уровней</span><span class="val">5</span></div>
+                <div class="row"><span class="desc">Макс. уровней</span><span class="val">5 (БТР: 3)</span></div>
                 <div class="row"><span class="desc">Обычный враг</span><span class="val">+1 очко</span></div>
                 <div class="row"><span class="desc">Тигр</span><span class="val">+2 очка</span></div>
                 <h4>РАКЕТЫ</h4>
@@ -307,8 +308,12 @@
                 <h4>ТИПЫ ТАНКОВ</h4>
                 <div class="row"><span class="desc">Обычный враг</span><span class="val">1 HP</span></div>
                 <div class="row"><span class="desc">Тигр</span><span class="val">2 HP, медленнее, чаще стреляет</span></div>
-                <div class="row"><span class="desc">Sherman (союзник)</span><span class="val">2 шт., изящный корпус</span></div>
-                <div class="row"><span class="desc">Тяжёлый союзник</span><span class="val">3 шт., 220 HP</span></div>
+                <div class="row"><span class="desc">БТР (союзник)</span><span class="val">пулемёт, 90 HP</span></div>
+                <div class="row"><span class="desc">Все союзники</span><span class="val">БТР-ы (4–5 шт.)</span></div>
+                <div class="row"><span class="desc">БТР (игрок)</span><span class="val">пулемёт, 90 HP, ∞ брони, ангары</span></div>
+                <div class="row"><span class="desc">БТР скорость</span><span class="val">всегда как при ур.3</span></div>
+                <div class="row"><span class="desc">Ангар (только БТР)</span><span class="val">укрытие: враги не видят</span></div>
+                <div class="row"><span class="desc">15 убийств БТР</span><span class="val">+4 врага в города</span></div>
                 <h4>ЗАЩИТА И СПАВН</h4>
                 <div class="row"><span class="desc">Радиус защиты</span><span class="val">80</span></div>
                 <div class="row"><span class="desc">Макс. защитников</span><span class="val">3</span></div>
@@ -398,8 +403,9 @@
             { name: 'Выкл', value: false }, { name: 'Вкл', value: true }
         ];
         const PLAYER_TANK_TYPES = {
-            normal:  { name: 'Стандарт', bodyW: 3.6, bodyH: 1.4, bodyD: 5.6, upperW: 3.2, upperH: 0.8, upperD: 4.8, turretR1: 1.3, turretR2: 1.4, turretH: 1.1, health: 130, speed: 18, reloadMax: 1.2 },
-            sherman: { name: 'Шерман',   bodyW: 3.2, bodyH: 1.2, bodyD: 5.4, upperW: 2.8, upperH: 0.7, upperD: 4.6, turretR1: 1.1, turretR2: 1.2, turretH: 1.3, health: 100, speed: 25, reloadMax: 1.0 }
+            normal:  { name: 'Стандарт', bodyW: 3.6, bodyH: 1.4, bodyD: 5.6, upperW: 3.2, upperH: 0.8, upperD: 4.8, turretR1: 1.3, turretR2: 1.4, turretH: 1.1, health: 130, speed: 18, reloadMax: 1.2, maxArmor: 5, turretSpeed: 2.0, weapon: 'shell' },
+            sherman: { name: 'Шерман',   bodyW: 3.2, bodyH: 1.2, bodyD: 5.4, upperW: 2.8, upperH: 0.7, upperD: 4.6, turretR1: 1.1, turretR2: 1.2, turretH: 1.3, health: 100, speed: 25, reloadMax: 1.0, maxArmor: 5, turretSpeed: 2.0, weapon: 'shell' },
+            apc:     { name: 'БТР', bodyW: 3.4, bodyH: 1.3, bodyD: 5.8, upperW: 3.0, upperH: 0.8, upperD: 4.4, health: 90, speed: 28, reloadMax: 0.12, maxArmor: 3, turretSpeed: 4.5, weapon: 'mg' }
         };
         let playerTankType = 'normal';
 
@@ -407,18 +413,18 @@
             const scale = MAP_SIZE / 2000;
             if (GAME_MODE === 'allies') {
                 let h = 0;
-                h += Math.sin(x * 0.008 / scale) * Math.cos(z * 0.007 / scale) * 18.0;
-                h += Math.sin((x + z) * 0.006 / scale + 1.3) * Math.cos((x - z) * 0.009 / scale - 0.7) * 12.0;
-                h += Math.sin(x * 0.018 / scale + 2.1) * Math.cos(z * 0.015 / scale + 0.5) * 7.0;
-                h += Math.sin(x * 0.04 / scale - 1.2) * Math.cos(z * 0.035 / scale + 2.7) * 3.0;
-                h += Math.sin(x * 0.15 / scale + 0.5) * Math.cos(z * 0.13 / scale - 0.3) * 0.5;
-                h -= Math.pow(Math.abs(Math.sin(x * 0.012 / scale + 0.8)), 3) * 5.0;
-                h -= Math.pow(Math.abs(Math.cos(z * 0.010 / scale - 0.4)), 3) * 5.0;
+                h += Math.sin(x * 0.008 / scale) * Math.cos(z * 0.007 / scale) * 9.0;
+                h += Math.sin((x + z) * 0.006 / scale + 1.3) * Math.cos((x - z) * 0.009 / scale - 0.7) * 6.0;
+                h += Math.sin(x * 0.018 / scale + 2.1) * Math.cos(z * 0.015 / scale + 0.5) * 4.0;
+                h += Math.sin(x * 0.04 / scale - 1.2) * Math.cos(z * 0.035 / scale + 2.7) * 2.0;
+                h += Math.sin(x * 0.15 / scale + 0.5) * Math.cos(z * 0.13 / scale - 0.3) * 0.3;
+                h -= Math.pow(Math.abs(Math.sin(x * 0.012 / scale + 0.8)), 3) * 3.0;
+                h -= Math.pow(Math.abs(Math.cos(z * 0.010 / scale - 0.4)), 3) * 3.0;
                 const dc = Math.sqrt(x*x + z*z);
                 const CR = CRATER_RADIUS * scale, HR = HILL_RADIUS * scale;
                 if (dc < HR + 20 * scale) {
                     const tH = Math.max(0, 1 - dc / HR);
-                    const hh = Math.sin(tH * Math.PI * 0.5) * HILL_HEIGHT * 2.5;
+                    const hh = Math.sin(tH * Math.PI * 0.5) * HILL_HEIGHT * 1.5;
                     let cr = 0;
                     if (dc < CR) { const tc = dc / CR; cr = (1 - tc * tc) * CRATER_DEPTH; }
                     const blend = Math.min(1, Math.max(0, (HR + 20 * scale - dc) / (20 * scale)));
@@ -504,6 +510,7 @@
             while (playerGroup.children.length > 0) playerGroup.remove(playerGroup.children[0]);
             const cfg = PLAYER_TANK_TYPES[playerTankType];
             const isTiger = playerTankType === 'tiger';
+            const isApc = playerTankType === 'apc';
             const bodyMat = new THREE.MeshLambertMaterial({ color: customization.bodyColor });
             const turretMat = new THREE.MeshLambertMaterial({ color: customization.turretColor });
             const barrelMat = new THREE.MeshLambertMaterial({ color: customization.barrelColor });
@@ -511,28 +518,32 @@
             pMaterials.body = bodyMat; pMaterials.turret = turretMat; pMaterials.barrel = barrelMat; pMaterials.tracks = trackMat;
             // Корпус и надстройка (на Тигре — как у вражеских: 3.6×1.6×6.0, y=1.15)
             const body = new THREE.Mesh(new THREE.BoxGeometry(cfg.bodyW, cfg.bodyH, cfg.bodyD), bodyMat);
-            body.position.y = isTiger ? 1.15 : 1.1; body.castShadow = true; body.receiveShadow = true;
+            body.position.y = isTiger ? 1.15 : (isApc ? 1.0 : 1.1); body.castShadow = true; body.receiveShadow = true;
             playerGroup.add(body); pParts.body = body;
             const upper = new THREE.Mesh(new THREE.BoxGeometry(cfg.upperW, cfg.upperH, cfg.upperD), bodyMat);
-            upper.position.y = isTiger ? 2.1 : 2.0; upper.castShadow = true; playerGroup.add(upper);
+            upper.position.y = isTiger ? 2.1 : (isApc ? 1.9 : 2.0); upper.castShadow = true; playerGroup.add(upper);
             // Группа башни-пивота: ствол/дуло/антенны/ракеты — её потомки, вращается для прицеливания
             const turretPivot = new THREE.Group();
-            turretPivot.position.set(0, isTiger ? 2.95 : 2.9, isTiger ? 0.7 : 0.9);
+            turretPivot.position.set(0, isTiger ? 2.95 : (isApc ? 2.7 : 2.9), isTiger ? 0.7 : (isApc ? 0.6 : 0.9));
             playerGroup.add(turretPivot);
             if (isTiger) {
                 const turret = new THREE.Mesh(new THREE.BoxGeometry(2.4, 1.0, 2.6), turretMat);
                 turret.position.set(0, 0, 0); turret.castShadow = true; turretPivot.add(turret);
                 const cup = new THREE.Mesh(new THREE.BoxGeometry(0.8, 0.5, 0.8), turretMat);
                 cup.position.set(0.3, 0.7, -0.4); turretPivot.add(cup);
+            } else if (isApc) {
+                // Маленькая башня БТР — короткий цилиндр; поворачивается быстро (turretSpeed в конфиге)
+                const turret = new THREE.Mesh(new THREE.CylinderGeometry(0.7, 0.8, 0.6, 10), turretMat);
+                turret.position.set(0, 0, 0); turret.castShadow = true; turretPivot.add(turret);
             } else {
                 const turret = new THREE.Mesh(new THREE.CylinderGeometry(cfg.turretR1, cfg.turretR2, cfg.turretH, 8), turretMat);
                 turret.position.set(0, 0, 0); turret.castShadow = true; turretPivot.add(turret);
             }
             pParts.turret = turretPivot;
             // Ствол: Тигр — как у врагов; остальные — по длине кастомизации
-            const bLen = isTiger ? 5.6 : (customization.barrelLength === 'short' ? 3.5 : (customization.barrelLength === 'long' ? 6.5 : 5.0));
-            const bRad = isTiger ? 0.2 : 0.16, bRad2 = isTiger ? 0.23 : 0.2;
-            const bY = isTiger ? 0.05 : 0.2, bZ = isTiger ? 2.6 : bLen / 2;
+            const bLen = isTiger ? 5.6 : (isApc ? 1.4 : (customization.barrelLength === 'short' ? 3.5 : (customization.barrelLength === 'long' ? 6.5 : 5.0)));
+            const bRad = isTiger ? 0.2 : (isApc ? 0.05 : 0.16), bRad2 = isTiger ? 0.23 : (isApc ? 0.05 : 0.2);
+            const bY = isTiger ? 0.05 : (isApc ? 0.1 : 0.2), bZ = isTiger ? 2.6 : (isApc ? 0.9 : bLen / 2);
             const barrel = new THREE.Mesh(new THREE.CylinderGeometry(bRad, bRad2, bLen, 8), barrelMat);
             barrel.rotation.x = Math.PI / 2; barrel.position.set(0, bY, bZ); barrel.castShadow = true; turretPivot.add(barrel);
             pParts.barrel = barrel;
@@ -585,6 +596,17 @@
                 }
                 const sGeo = new THREE.BoxGeometry(0.12, 0.8, 5.6);
                 for (const side of [-1, 1]) { const s = new THREE.Mesh(sGeo, trackMat); s.position.set(side * 2.3, 0.95, 0); s.castShadow = true; playerGroup.add(s); }
+            } else if (isApc) {
+                // Колёса вместо гусениц (БТР): по 4 катка на борт + надгусеничные полки
+                const wheelGeo = new THREE.CylinderGeometry(0.6, 0.6, 0.5, 12);
+                for (let i = 0; i < 4; i++) {
+                    const wz = -2.1 + i * 1.4;
+                    const wl = new THREE.Mesh(wheelGeo, trackMat); wl.rotation.z = Math.PI / 2; wl.position.set(-1.7, 0.6, wz); wl.castShadow = true; playerGroup.add(wl);
+                    const wr = wl.clone(); wr.position.x = 1.7; playerGroup.add(wr);
+                }
+                const fenderGeo = new THREE.BoxGeometry(0.6, 0.15, 5.6);
+                const fL = new THREE.Mesh(fenderGeo, trackMat); fL.position.set(-1.7, 1.15, 0); fL.castShadow = true; playerGroup.add(fL);
+                const fR = fL.clone(); fR.position.x = 1.7; playerGroup.add(fR);
             } else {
                 const trackGeo = new THREE.BoxGeometry(0.8, 1.1, 5.8);
                 const tL = new THREE.Mesh(trackGeo, trackMat); tL.position.set(-1.7, 0.55, 0); tL.castShadow = true; playerGroup.add(tL);
@@ -658,7 +680,7 @@
 
         const ARMOR_PER_LEVEL = 40, SPEED_PENALTY_PER_LEVEL = 0.12, MAX_ARMOR_LEVEL = 5;
         const UPGRADE_COST = 2, ROCKET_UNLOCK_COST = 8, ROCKET_AMMO_PER_PURCHASE = 2, MAX_ROCKETS = 6;
-        let kills = 0, shotsFired = 0, shotsHit = 0;
+        let kills = 0, shotsFired = 0, shotsHit = 0; let apcReinforcementTriggered = false;
 
         function clearWorld() {
             if (ground) { scene.remove(ground); ground.geometry.dispose(); ground.material.dispose(); ground = null; }
@@ -860,7 +882,7 @@
                 s.position.set(0, h * 0.15 + i * 1.0, d/2 + 0.12); g.add(s); parts.push(s);
             }
             g.position.set(x, gy, z); scene.add(g);
-            buildings.push({ group: g, position: new THREE.Vector3(x, gy, z), width: w, height: h, depth: d, halfW: w/2, halfD: d/2, health: BUILDING_HP, maxHealth: BUILDING_HP, destroyed: false, parts, color: 0x7a8a7a });
+            buildings.push({ group: g, position: new THREE.Vector3(x, gy, z), width: w, height: h, depth: d, halfW: w/2, halfD: d/2, health: BUILDING_HP, maxHealth: BUILDING_HP, destroyed: false, parts, color: 0x7a8a7a, hangar: true });
         }
 
         function createTankBuilding(x, z, radius, height) {
@@ -938,10 +960,12 @@
             const tank = new THREE.Group();
             const isTiger = type === 'tiger';
             const isSherman = type === 'sherman';
+            const isApc = type === 'apc';
             const es = 1 + armor * 0.04;
             let bodyW, bodyH, bodyD;
             if (isTiger) { bodyW = 3.6; bodyH = 1.6; bodyD = 6.0; }
             else if (isSherman) { bodyW = 3.2; bodyH = 1.2; bodyD = 5.8; }
+            else if (isApc) { bodyW = 3.4; bodyH = 1.3; bodyD = 5.8; }
             else { bodyW = 3.4; bodyH = 1.3; bodyD = 5.2; }
             const body = new THREE.Mesh(new THREE.BoxGeometry(bodyW*es, bodyH*es, bodyD*es), new THREE.MeshLambertMaterial({ color }));
             body.position.y = isTiger ? 1.15 : 1.0; body.castShadow = true; body.receiveShadow = true; tank.add(body);
@@ -954,6 +978,9 @@
             } else if (isTiger) {
                 const upper = new THREE.Mesh(new THREE.BoxGeometry(3.2*es, 0.9*es, 5.0*es), body.material);
                 upper.position.y = 2.1; upper.castShadow = true; tank.add(upper);
+            } else if (isApc) {
+                const upper = new THREE.Mesh(new THREE.BoxGeometry(3.0*es, 0.8*es, 4.4*es), body.material);
+                upper.position.y = 1.9; upper.castShadow = true; tank.add(upper);
             } else {
                 const upper = new THREE.Mesh(new THREE.BoxGeometry(3.0*es, 0.7*es, 4.4*es), body.material);
                 upper.position.y = 1.9; upper.castShadow = true; tank.add(upper);
@@ -961,7 +988,7 @@
 
             // Группа башни-пивота (вращается для прицеливания): башня/ствол/дуло/башенка — её потомки
             const pivY = isSherman ? 2.85 : (isTiger ? 2.95 : 2.7);
-            const pivZ = isSherman ? 0.9 : (isTiger ? 0.7 : 0.9);
+            const pivZ = isSherman ? 0.9 : (isTiger ? 0.7 : (isApc ? 0.6 : 0.9));
             const turretPivot = new THREE.Group();
             turretPivot.position.set(0, pivY, pivZ);
             tank.add(turretPivot);
@@ -976,6 +1003,9 @@
                 turret.position.set(0, 0, 0); turret.castShadow = true; turretPivot.add(turret);
                 const cup = new THREE.Mesh(new THREE.BoxGeometry(0.8, 0.5, 0.8), turret.material);
                 cup.position.set(0.3, 0.7, -0.4); turretPivot.add(cup);
+            } else if (isApc) {
+                turret = new THREE.Mesh(new THREE.CylinderGeometry(0.7, 0.8, 0.6, 10), new THREE.MeshLambertMaterial({ color }));
+                turret.position.set(0, 0, 0); turret.castShadow = true; turretPivot.add(turret);
             } else {
                 turret = new THREE.Mesh(new THREE.CylinderGeometry(1.2*es, 1.3*es, 1.0*es, 8), new THREE.MeshLambertMaterial({ color }));
                 turret.position.set(0, 0, 0); turret.castShadow = true; turretPivot.add(turret);
@@ -984,6 +1014,7 @@
             let bLen, bRad, bPosZ, bPosY;
             if (isSherman) { bLen = 6.5; bRad = 0.12; bPosZ = 3.8; bPosY = 2.95; }
             else if (isTiger) { bLen = 5.6; bRad = 0.2; bPosZ = 3.3; bPosY = 3.0; }
+            else if (isApc) { bLen = 1.4; bRad = 0.05; bPosZ = 0.9; bPosY = 2.8; }
             else { bLen = 4.5; bRad = 0.15; bPosZ = 2.7; bPosY = 2.9; }
             const bY = bPosY - pivY, bZ = bPosZ - pivZ;
             const barrel = new THREE.Mesh(new THREE.CylinderGeometry(bRad, bRad + 0.03, bLen, 8), new THREE.MeshLambertMaterial({ color: 0x2a2a2a }));
@@ -991,26 +1022,40 @@
             const muzzle = new THREE.Object3D();
             muzzle.position.set(0, bY, bZ + bLen / 2); turretPivot.add(muzzle);
 
-            const trackW = isTiger ? 1.0 : (isSherman ? 0.65 : 0.7);
-            const trackD = isTiger ? 6.2 : (isSherman ? 5.9 : 5.4);
-            const tGeo = new THREE.BoxGeometry(trackW, 1.0, trackD * es);
-            const tMat = new THREE.MeshLambertMaterial({ color: 0x1a1a1a });
-            const tLX = isTiger ? -1.8 : (isSherman ? -1.55 : -1.6);
-            const tL = new THREE.Mesh(tGeo, tMat); tL.position.set(tLX, 0.5, 0); tL.castShadow = true; tank.add(tL);
-            const tR = new THREE.Mesh(tGeo, tMat); tR.position.set(-tLX, 0.5, 0); tR.castShadow = true; tank.add(tR);
+            if (isApc) {
+                // Колёса вместо гусениц (БТР): по 4 катка на борт + надгусеничные полки
+                const apcWheelGeo = new THREE.CylinderGeometry(0.6, 0.6, 0.5, 12);
+                const apcWheelMat = new THREE.MeshLambertMaterial({ color: 0x2a2a2a });
+                for (let i = 0; i < 4; i++) {
+                    const wz = -2.1 + i * 1.4;
+                    const wl = new THREE.Mesh(apcWheelGeo, apcWheelMat); wl.rotation.z = Math.PI / 2; wl.position.set(-1.7, 0.6, wz); wl.castShadow = true; tank.add(wl);
+                    const wr = wl.clone(); wr.position.x = 1.7; tank.add(wr);
+                }
+                const fenderGeo = new THREE.BoxGeometry(0.6, 0.15, 5.6);
+                const fL = new THREE.Mesh(fenderGeo, apcWheelMat); fL.position.set(-1.7, 1.15, 0); fL.castShadow = true; tank.add(fL);
+                const fR = fL.clone(); fR.position.x = 1.7; tank.add(fR);
+            } else {
+                const trackW = isTiger ? 1.0 : (isSherman ? 0.65 : 0.7);
+                const trackD = isTiger ? 6.2 : (isSherman ? 5.9 : 5.4);
+                const tGeo = new THREE.BoxGeometry(trackW, 1.0, trackD * es);
+                const tMat = new THREE.MeshLambertMaterial({ color: 0x1a1a1a });
+                const tLX = isTiger ? -1.8 : (isSherman ? -1.55 : -1.6);
+                const tL = new THREE.Mesh(tGeo, tMat); tL.position.set(tLX, 0.5, 0); tL.castShadow = true; tank.add(tL);
+                const tR = new THREE.Mesh(tGeo, tMat); tR.position.set(-tLX, 0.5, 0); tR.castShadow = true; tank.add(tR);
 
-            const wGeo = new THREE.CylinderGeometry(isTiger ? 0.6 : 0.5, isTiger ? 0.6 : 0.5, 0.7, 10);
-            const wMat = new THREE.MeshLambertMaterial({ color: 0x2a2a2a });
-            const wc = isTiger ? 3 : 2;
-            for (let i = -wc; i <= wc; i++) {
-                const wl = new THREE.Mesh(wGeo, wMat); wl.rotation.z = Math.PI / 2; wl.position.set(tLX, 0.5, i*1.0); tank.add(wl);
-                const wr = wl.clone(); wr.position.x = -tLX; tank.add(wr);
-            }
+                const wGeo = new THREE.CylinderGeometry(isTiger ? 0.6 : 0.5, isTiger ? 0.6 : 0.5, 0.7, 10);
+                const wMat = new THREE.MeshLambertMaterial({ color: 0x2a2a2a });
+                const wc = isTiger ? 3 : 2;
+                for (let i = -wc; i <= wc; i++) {
+                    const wl = new THREE.Mesh(wGeo, wMat); wl.rotation.z = Math.PI / 2; wl.position.set(tLX, 0.5, i*1.0); tank.add(wl);
+                    const wr = wl.clone(); wr.position.x = -tLX; tank.add(wr);
+                }
 
-            if (isTiger) {
-                const sMat = new THREE.MeshLambertMaterial({ color: 0x2a2a2a });
-                const sGeo = new THREE.BoxGeometry(0.12, 0.8, 5.6);
-                for (const side of [-1, 1]) { const s = new THREE.Mesh(sGeo, sMat); s.position.set(side * 2.3, 0.95, 0); s.castShadow = true; tank.add(s); }
+                if (isTiger) {
+                    const sMat = new THREE.MeshLambertMaterial({ color: 0x2a2a2a });
+                    const sGeo = new THREE.BoxGeometry(0.12, 0.8, 5.6);
+                    for (const side of [-1, 1]) { const s = new THREE.Mesh(sGeo, sMat); s.position.set(side * 2.3, 0.95, 0); s.castShadow = true; tank.add(s); }
+                }
             }
 
             if (armor >= 3) {
@@ -1053,22 +1098,23 @@
         const TURRET_TURN_SPEED = 2.0;
 
         function createAllyTank(x, z, rotY = 0, color = 0x2288cc, type = 'ally_heavy') {
+            const isApc = type === 'apc';
             const isSherman = type === 'sherman';
-            const armor = isSherman ? SHERMAN_ARMOR : ALLY_HEAVY_ARMOR;
-            const b = buildTankGroup(color, armor, isSherman ? 'sherman' : 'normal');
+            const armor = isApc ? 0 : (isSherman ? SHERMAN_ARMOR : ALLY_HEAVY_ARMOR);
+            const b = buildTankGroup(color, armor, isApc ? 'apc' : (isSherman ? 'sherman' : 'normal'));
             b.tank.position.set(x, getTerrainHeight(x, z), z); b.tank.rotation.y = rotY; scene.add(b.tank);
-            const hp = isSherman ? SHERMAN_HP : ALLY_HEAVY_HP;
+            const hp = isApc ? PLAYER_TANK_TYPES.apc.health : (isSherman ? SHERMAN_HP : ALLY_HEAVY_HP);
             allyTanks.push({
                 group: b.tank, bodyMat: b.bodyMat, turretMat: b.turretMat, originalColor: color,
                 muzzle: b.muzzle, turret: b.turret, destroyed: false, fireGroup: b.fireGroup,
                 fireParticles: [], smokeParticles: [], fireLight: null, fireTime: 0,
-                fireCooldown: Math.random()*2,
-                fireCooldownMax: isSherman ? 1.8 : 2.5,
+                fireCooldown: Math.random() * (isApc ? 0.3 : 2),
+                fireCooldownMax: isApc ? 0.2 : (isSherman ? 1.8 : 2.5),
                 muzzleWorldPos: new THREE.Vector3(), muzzleWorldDir: new THREE.Vector3(0, 0, 1),
                 armorLevel: armor, hp, maxHp: hp,
                 flankOffset: (Math.random()-0.5)*30, preferredDist: 45 + Math.random()*20,
-                speedFactor: isSherman ? SHERMAN_SPEED_MULT : ALLY_SPEED_MULT,
-                isSherman
+                speedFactor: isApc ? 1.0 : (isSherman ? SHERMAN_SPEED_MULT : ALLY_SPEED_MULT),
+                isSherman, isApc
             });
         }
 
@@ -1108,15 +1154,49 @@
                 createEnemyTank(x, z, Math.random()*Math.PI*2, cols[i % cols.length], isT ? 'tiger' : 'normal');
                 spawned++;
             }
+            // Добор: если не достигли count, спавним на случайных позициях вдали от старта
+            let attempts = 0;
+            const minR = 110 * sc, maxR = MAP_SIZE / 2 - 30;
+            while (spawned < count && attempts < count * 30) {
+                attempts++;
+                const ang = Math.random() * Math.PI * 2;
+                const r = minR + Math.random() * (maxR - minR);
+                const x = Math.cos(ang) * r, z = Math.sin(ang) * r;
+                if (!isFar(x, z, 15)) continue;
+                used.push({ x, z });
+                const isT = Math.random() < tigerProb;
+                const cols = [0x4a5a3a, 0x5a4a3a, 0x3a4a5a, 0x4a3a5a, 0x5a5a3a];
+                createEnemyTank(x, z, Math.random()*Math.PI*2, cols[spawned % cols.length], isT ? 'tiger' : 'normal');
+                spawned++;
+            }
+        }
+
+        // Подкрепление врага: спавн N машин у городских кластеров (механика БТР — после 15 убийств)
+        function spawnReinforcements(n) {
+            const sc = MAP_SIZE / 2000;
+            const cols = [0x5a3a3a, 0x3a3a5a, 0x5a5a3a, 0x3a4a5a];
+            let spawned = 0, attempts = 0;
+            while (spawned < n && attempts < n * 25 && buildingClusters.length > 0) {
+                attempts++;
+                const cl = buildingClusters[Math.floor(Math.random() * buildingClusters.length)];
+                const ang = Math.random() * Math.PI * 2, d = 35 + Math.random() * 25;
+                const x = cl.center.x + Math.cos(ang) * d, z = cl.center.z + Math.sin(ang) * d;
+                if (Math.hypot(x, z) < 120 * sc) continue;
+                if (buildingCollision(x, z, 2, 2)) continue;
+                const isT = Math.random() < 0.25;
+                createEnemyTank(x, z, Math.random() * Math.PI * 2, cols[spawned % cols.length], isT ? 'tiger' : 'normal');
+                spawned++;
+            }
+            totalTanksEl.textContent = tanks.length;
         }
 
         function createAllies(count) {
             const sc = MAP_SIZE / 2000;
             const pos = [[-15,10],[15,10],[-25,20],[25,20],[0,25]];
+            const cols = [0x3a6a8a, 0x4a7a9a, 0x5a8aaa, 0x6a9aba, 0x2a5a7a];
             for (let i = 0; i < count; i++) {
                 const [ox, oz] = pos[i % pos.length];
-                const isSherman = i < 2;
-                createAllyTank(ox*sc, oz*sc, 0, isSherman ? 0x4a8acc : 0x2288cc, isSherman ? 'sherman' : 'ally_heavy');
+                createAllyTank(ox*sc, oz*sc, 0, cols[i % cols.length], 'apc');
             }
         }
 
@@ -1128,10 +1208,10 @@
                 ENEMY_COUNT = 15; ALLY_COUNT = 0; BARREL_COUNT = 8; TREE_COUNT = 40;
                 GRASS_COUNT = 25000; GRASS_RADIUS = 300;
             } else {
-                MAP_SIZE = 4000; MAP_LIMIT = 560;
+                MAP_SIZE = 2667; MAP_LIMIT = 373;
                 CRATER_RADIUS = 24; HILL_RADIUS = 60; HILL_HEIGHT = 6; CRATER_DEPTH = 12;
-                ENEMY_COUNT = 30; ALLY_COUNT = 5; BARREL_COUNT = 16; TREE_COUNT = 80;
-                GRASS_COUNT = 45000; GRASS_RADIUS = 600;
+                ENEMY_COUNT = 30; ALLY_COUNT = playerTankType === 'apc' ? 4 : 5; BARREL_COUNT = 16; TREE_COUNT = 80;
+                GRASS_COUNT = 45000; GRASS_RADIUS = 400;
             }
             SHELL_DAMAGE = 50;
             clearWorld();
@@ -1156,7 +1236,7 @@
             playerTank.position.set(0, getTerrainHeight(0, 0), 0); playerTank.rotation = 0;
             playerTank.velocity.set(0, 0, 0); playerTank.health = playerTank.baseHealth;
             playerTank.maxHealth = playerTank.baseHealth; playerTank.armorLevel = 0;
-            playerTank.upgradePoints = 0; playerTank.reloadTime = 0;
+            playerTank.upgradePoints = 0; playerTank.reloadTime = 0; apcReinforcementTriggered = false;
             if (pTurret) pTurret.rotation.y = 0;
             playerTank.destroyed = false; playerTank.rocketsUnlocked = false;
             playerTank.rocketsCount = 0; playerTank.rocketReloadTime = 0;
@@ -1685,6 +1765,12 @@
                     updateUpgradeUI();
                     showPointsPopup('+' + reward + ' \u2b50');
                 }
+                // Механика БТР: после 15 уничтоженных БТР-ом в города приходят подкрепления (+4)
+                if (playerTankType === 'apc' && kills >= 15 && !apcReinforcementTriggered) {
+                    apcReinforcementTriggered = true;
+                    spawnReinforcements(4);
+                    showPointsPopup('ВРАГ: +4 ПОДКРЕПЛЕНИЯ');
+                }
                 if (tanks.every(x => x.destroyed)) showWin();
             } else {
                 t.bodyMat.color.setHex(0xff6600);
@@ -1777,8 +1863,9 @@
                     winScreenEl.classList.remove('active');
                 }
             }
-            if (e.code === 'KeyE' && !playerTank.destroyed && modeMenuEl.style.display === 'none' && GAME_MODE === 'allies') {
-                if (playerTank.upgradePoints >= UPGRADE_COST && playerTank.armorLevel < MAX_ARMOR_LEVEL) {
+            if (e.code === 'KeyE' && !playerTank.destroyed && modeMenuEl.style.display === 'none') {
+                const _apcInfiniteArmor = playerTankType === 'apc';
+                if (playerTank.upgradePoints >= UPGRADE_COST && (_apcInfiniteArmor || playerTank.armorLevel < PLAYER_TANK_TYPES[playerTankType].maxArmor)) {
                     playerTank.upgradePoints -= UPGRADE_COST;
                     playerTank.armorLevel++;
                     playerTank.maxHealth = playerTank.baseHealth + playerTank.armorLevel * ARMOR_PER_LEVEL;
@@ -1833,6 +1920,21 @@
             updateAccuracy();
         }
 
+        // Пулемёт БТР: высокая скорострельность, урон пули = 1/4 урона стандартного ядра
+        function fireBullet() {
+            if (playerTank.reloadTime > 0 || playerTank.destroyed) return;
+            playerTank.reloadTime = playerTank.reloadMax;
+            // Индикатор «ПЕРЕЗАРЯДКА» не показываем — перезарядка почти мгновенная
+            shotsFired++;
+            const yaw = playerTank.rotation + pTurret.rotation.y;
+            const dir = new THREE.Vector3(Math.sin(yaw), 0, Math.cos(yaw));
+            const start = playerMuzzle.getWorldPosition(new THREE.Vector3());
+            const bullet = new THREE.Mesh(new THREE.SphereGeometry(0.1, 5, 5), new THREE.MeshBasicMaterial({ color: 0xffdd66 }));
+            bullet.position.copy(start); scene.add(bullet);
+            shells.push({ mesh: bullet, velocity: dir.multiplyScalar(260), life: 1.2, fromPlayer: true, dmg: SHELL_DAMAGE / 4, hitRadius: 5.0, isBullet: true });
+            updateAccuracy();
+        }
+
         function fireRocket() {
             if (playerTank.rocketReloadTime > 0 || playerTank.destroyed) return;
             if (playerTank.rocketsCount <= 0) return;
@@ -1862,10 +1964,21 @@
         // Урон снаряда по врагу (игрок и союзники)
         let SHELL_DAMAGE = 50;
         // Проверка столкновения AABB танка (полуразмеры hw×hd) со зданиями
-        function buildingCollision(x, z, hw, hd) {
+        function buildingCollision(x, z, hw, hd, forApc = false) {
             for (const b of buildings) {
                 if (b.destroyed) continue;
+                if (forApc && b.hangar) continue; // БТР проезжает сквозь ангары (укрытие)
                 if (Math.abs(x - b.position.x) < b.halfW + hw && Math.abs(z - b.position.z) < b.halfD + hd) return true;
+            }
+            return false;
+        }
+        // БТР внутри ангара — скрыт от врагов (засада)
+        function playerInHangar() {
+            if (playerTankType !== 'apc') return false;
+            for (const b of buildings) {
+                if (b.destroyed || !b.hangar) continue;
+                if (Math.abs(playerTank.position.x - b.position.x) < b.halfW &&
+                    Math.abs(playerTank.position.z - b.position.z) < b.halfD) return true;
             }
             return false;
         }
@@ -1878,7 +1991,7 @@
                 const targetZ = t.patrolCenter.z + Math.sin(t.patrolAngle) * t.patrolRadius;
                 let target = new THREE.Vector3(targetX, 0, targetZ);
                 let nearest = null, nearestDist = 9999;
-                if (!playerTank.destroyed) {
+                if (!playerTank.destroyed && !playerInHangar()) {
                     const d = pos.distanceTo(playerTank.position);
                     if (d < 120) { nearest = playerTank; nearestDist = d; }
                 }
@@ -1989,9 +2102,15 @@
                         const start = a.muzzle.getWorldPosition(new THREE.Vector3());
                         const _wYaw = a.group.rotation.y + a.turret.rotation.y;
                         const d2 = new THREE.Vector3(Math.sin(_wYaw), 0, Math.cos(_wYaw));
-                        const shell = new THREE.Mesh(new THREE.SphereGeometry(0.22, 6, 6), new THREE.MeshBasicMaterial({ color: 0x66ccff }));
-                        shell.position.copy(start); scene.add(shell);
-                        shells.push({ mesh: shell, velocity: d2.multiplyScalar(150), life: 3.0, fromPlayer: false, fromAlly: true, dmg: SHELL_DAMAGE });
+                        if (a.isApc) {
+                            const bullet = new THREE.Mesh(new THREE.SphereGeometry(0.12, 5, 5), new THREE.MeshBasicMaterial({ color: 0xffee66 }));
+                            bullet.position.copy(start); scene.add(bullet);
+                            shells.push({ mesh: bullet, velocity: d2.multiplyScalar(260), life: 1.2, fromPlayer: false, fromAlly: true, dmg: SHELL_DAMAGE / 4, hitRadius: 5.0, isBullet: true });
+                        } else {
+                            const shell = new THREE.Mesh(new THREE.SphereGeometry(0.22, 6, 6), new THREE.MeshBasicMaterial({ color: 0x66ccff }));
+                            shell.position.copy(start); scene.add(shell);
+                            shells.push({ mesh: shell, velocity: d2.multiplyScalar(150), life: 3.0, fromPlayer: false, fromAlly: true, dmg: SHELL_DAMAGE });
+                        }
                     }
                 } else {
                     if (!playerTank.destroyed) {
@@ -2024,10 +2143,11 @@
                 if (s.mesh.position.y <= gy + 0.3) { hit = true; createExplosion(s.mesh.position.clone(), false); }
                 for (const b of buildings) {
                     if (b.destroyed) continue;
+                    if (s.isBullet && b.hangar) continue; // пули БТР проходят сквозь ангары — стрельба изнутри укрытия
                     if (Math.abs(s.mesh.position.x - b.position.x) < b.halfW + 0.5 &&
                         Math.abs(s.mesh.position.z - b.position.z) < b.halfD + 0.5 &&
                         s.mesh.position.y < b.position.y + b.height + 1) {
-                        damageBuilding(b, s.mesh.position.clone());
+                        if (!s.isBullet) damageBuilding(b, s.mesh.position.clone());
                         hit = true; break;
                     }
                 }
@@ -2040,7 +2160,7 @@
                 if (!hit && s.fromPlayer) {
                     for (const t of tanks) {
                         if (t.destroyed) continue;
-                        if (s.mesh.position.distanceTo(t.group.position.clone().setY(t.group.position.y + 1.5)) < 3.5) {
+                        if (s.mesh.position.distanceTo(t.group.position.clone().setY(t.group.position.y + 1.5)) < (s.hitRadius || 3.5)) {
                             damageEnemyTank(t, s.dmg); shotsHit++;
                             triggerRevenge(t);
                             hit = true; updateAccuracy(); break;
@@ -2049,7 +2169,7 @@
                 } else if (!hit && s.fromAlly) {
                     for (const t of tanks) {
                         if (t.destroyed) continue;
-                        if (s.mesh.position.distanceTo(t.group.position.clone().setY(t.group.position.y + 1.5)) < 3.5) {
+                        if (s.mesh.position.distanceTo(t.group.position.clone().setY(t.group.position.y + 1.5)) < (s.hitRadius || 3.5)) {
                             damageEnemyTank(t, s.dmg, false); hit = true; break;
                         }
                     }
@@ -2060,7 +2180,7 @@
                             damageAlly(a, 50); hit = true; break;
                         }
                     }
-                    if (!hit && !playerTank.destroyed && s.mesh.position.distanceTo(playerTank.position.clone().setY(playerTank.position.y + 1.5)) < 3.5) {
+                    if (!hit && !playerTank.destroyed && s.mesh.position.distanceTo(playerTank.position.clone().setY(playerTank.position.y + 1.5)) < (s.hitRadius || 3.5)) {
                         damagePlayer(20); hit = true;
                     }
                 }
@@ -2145,7 +2265,8 @@
             crosshairEl.style.display = inGame ? 'block' : 'none';
 
             if (inGame && !playerTank.destroyed) {
-                const moveSpeed = playerTank.baseSpeed * (1 - playerTank.armorLevel * SPEED_PENALTY_PER_LEVEL);
+                const _speedArmorLvl = playerTankType === 'apc' ? PLAYER_TANK_TYPES.apc.maxArmor : playerTank.armorLevel;
+                const moveSpeed = playerTank.baseSpeed * (1 - _speedArmorLvl * SPEED_PENALTY_PER_LEVEL);
                 const rotSpeed = 1.8;
                 if (keys['KeyW']) playerTank.velocity.z = moveSpeed;
                 else if (keys['KeyS']) playerTank.velocity.z = -moveSpeed * 0.6;
@@ -2155,8 +2276,9 @@
                 const forward = new THREE.Vector3(0, 0, 1).applyAxisAngle(new THREE.Vector3(0, 1, 0), playerTank.rotation);
                 const _mvx = forward.x * playerTank.velocity.z * dt;
                 const _mvz = forward.z * playerTank.velocity.z * dt;
-                if (!buildingCollision(playerTank.position.x + _mvx, playerTank.position.z, 1.6, 2.5)) playerTank.position.x += _mvx;
-                if (!buildingCollision(playerTank.position.x, playerTank.position.z + _mvz, 1.6, 2.5)) playerTank.position.z += _mvz;
+                const _apcHangar = playerTankType === 'apc';
+                if (!buildingCollision(playerTank.position.x + _mvx, playerTank.position.z, 1.6, 2.5, _apcHangar)) playerTank.position.x += _mvx;
+                if (!buildingCollision(playerTank.position.x, playerTank.position.z + _mvz, 1.6, 2.5, _apcHangar)) playerTank.position.z += _mvz;
                 const lim = MAP_SIZE / 2 - 25;
                 playerTank.position.x = Math.max(-lim, Math.min(lim, playerTank.position.x));
                 playerTank.position.z = Math.max(-lim, Math.min(lim, playerTank.position.z));
@@ -2170,7 +2292,10 @@
                 }
                 if (playerTank.rocketReloadTime > 0) playerTank.rocketReloadTime -= dt;
 
-                if (mouseLeft) fireShell();
+                if (mouseLeft) {
+                    if (PLAYER_TANK_TYPES[playerTankType].weapon === 'mg') fireBullet();
+                    else fireShell();
+                }
 
                 if (mouseRight) {
                     crosshairEl.classList.add('zoom');
@@ -2197,7 +2322,8 @@
                         let dy = targetYaw - pTurret.rotation.y;
                         while (dy > Math.PI) dy -= 2 * Math.PI;
                         while (dy < -Math.PI) dy += 2 * Math.PI;
-                        const tstep = Math.max(-TURRET_TURN_SPEED * dt, Math.min(TURRET_TURN_SPEED * dt, dy));
+                        const _ptsp = PLAYER_TANK_TYPES[playerTankType].turretSpeed;
+                        const tstep = Math.max(-_ptsp * dt, Math.min(_ptsp * dt, dy));
                         pTurret.rotation.y += tstep;
                     }
                 }
@@ -2233,4 +2359,4 @@
         modeMenuEl.style.display = 'flex';
     </script>
 </body>
-</html>
+</html
